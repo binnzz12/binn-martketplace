@@ -1,0 +1,156 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binn Marketplace - Sedang Diperbarui</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1e293b;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #475569;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 3px solid rgba(14, 165, 233, 0.2);
+      border-top: 3px solid #0ea5e9;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1.8rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      cursor: pointer;
+    }
+
+    .contact-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+    }
+
+    .contact-button:active {
+      transform: translateY(0);
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #25d366;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2rem;
+      }
+      .message {
+        font-size: 1rem;
+      }
+      .contact-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">Binn Marketplace</div>
+    <div class="loader"></div>
+    <p class="message">
+      Kami sedang melakukan pembaruan sistem untuk memberikan pengalaman belanja yang lebih baik.<br>
+      Mohon maaf atas ketidaknyamanannya. Silakan kunjungi kembali dalam beberapa saat.
+    </p>
+    <a href="https://wa.me/6285330105729" target="_blank" rel="noopener noreferrer" class="contact-button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h.004c-2.259 0-4.316-.608-6.031-1.719l-.233-.143-2.331.612.622-2.253-.158-.248C2.552 16.05 2 13.973 2 11.797 2 5.777 6.853 1 12.804 1s10.805 4.777 10.805 10.797-4.953 10.798-10.904 10.798z" fill="currentColor"/>
+      </svg>
+      Hubungi Admin WhatsApp
+    </a>
+    <div class="status-indicator">
+      <div class="status-dot"></div>
+      <span>Admin online - Terhubung ke WhatsApp API</span>
+    </div>
+    <p class="footer">Terima kasih atas kesabaran Anda</p>
+  </div>
+</body>
+</html>
+```
