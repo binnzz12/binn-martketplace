@@ -8,7 +8,7 @@ sosial_media: {
   email: "ytbintang4@gmail.com", // Email
   youtube: "@binnzzpreset", // YouTube Username 
   tiktok: "prstbinn_", // Tiktok Username 
-  whatsapp: "https://whatsapp.com/channel/0029VazV2FbKQuJRmkoqfq0p", // WhatsApp Number 
+  whatsapp: "085330105729", // WhatsApp Number 
   telegram: "binnprst" // Telegram Username
 },
 payment: {
