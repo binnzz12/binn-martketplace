@@ -1,366 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Tidak Ditemukan - 404</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Variabel CSS untuk Light dan Dark Mode */
-        :root {
-            --primary: #4a6cfa;
-            --secondary: #ff6b6b;
-            --accent: #4ecdc4;
-            --success: #00b894;
-            --warning: #fdcb6e;
-            --info: #0984e3;
-            
-            /* Light Mode Variables */
-            --bg-color: #f5f7ff;
-            --card-bg: #ffffff;
-            --text-color: #2d3436;
-            --text-secondary: #636e72;
-            --border-color: #dfe6e9;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            
-            --header-bg: linear-gradient(135deg, var(--primary), #6c5ce7);
-            --footer-bg: #2d3436;
-            --footer-text: #f8f9fa;
-            
-            --radius: 12px;
-            --transition: all 0.3s ease;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binn Marketplace - Sedang Diperbarui</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    }
 
-        /* Dark Mode Variables */
-        [data-theme="dark"] {
-            --bg-color: #1a1d21;
-            --card-bg: #2d3436;
-            --text-color: #f8f9fa;
-            --text-secondary: #b2bec3;
-            --border-color: #636e72;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            
-            --header-bg: linear-gradient(135deg, #2d3436, #1a1d21);
-            --footer-bg: #1a1d21;
-        }
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1e293b;
+    }
 
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 2rem;
+    }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            transition: var(--transition);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-        .container {
-            max-width: 600px;
-            width: 100%;
-            padding: 0 20px;
-        }
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #475569;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
 
-        /* Character Illustration */
-        .character {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 30px;
-            position: relative;
-            animation: float 3s ease-in-out infinite;
-        }
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 3px solid rgba(14, 165, 233, 0.2);
+      border-top: 3px solid #0ea5e9;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1.8rem;
+    }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
-        .character-body {
-            width: 120px;
-            height: 120px;
-            background: var(--primary);
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      cursor: pointer;
+    }
 
-        .character-face {
-            width: 80px;
-            height: 80px;
-            background: var(--card-bg);
-            border-radius: 50%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .contact-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+    }
 
-        .character-eye {
-            width: 15px;
-            height: 15px;
-            background: var(--text-color);
-            border-radius: 50%;
-            position: absolute;
-            top: 30px;
-        }
+    .contact-button:active {
+      transform: translateY(0);
+    }
 
-        .character-eye.left {
-            left: 20px;
-        }
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #475569;
+    }
 
-        .character-eye.right {
-            right: 20px;
-        }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #25d366;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
 
-        .character-mouth {
-            width: 30px;
-            height: 10px;
-            background: var(--text-color);
-            border-radius: 0 0 15px 15px;
-            position: absolute;
-            bottom: 25px;
-        }
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
 
-        .character-antena {
-            width: 10px;
-            height: 40px;
-            background: var(--primary);
-            border-radius: 5px;
-            position: absolute;
-            top: -30px;
-        }
+    .footer {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 2rem;
+    }
 
-        .character-antena.left {
-            left: 35px;
-            transform: rotate(-15deg);
-        }
-
-        .character-antena.right {
-            right: 35px;
-            transform: rotate(15deg);
-        }
-
-        .character-antena::after {
-            content: '';
-            width: 15px;
-            height: 15px;
-            background: var(--secondary);
-            border-radius: 50%;
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        /* Error Code */
-        .error-code {
-            font-size: 6rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 10px;
-            line-height: 1;
-        }
-
-        .error-title {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: var(--text-color);
-        }
-
-        .error-description {
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Action Buttons */
-        .action-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            border-radius: var(--radius);
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background: #3a5be0;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(58, 91, 224, 0.3);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-color);
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(74, 108, 250, 0.1);
-            border-color: var(--primary);
-            transform: translateY(-2px);
-        }
-
-        /* Theme Toggle */
-        .theme-toggle {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: var(--primary);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: var(--shadow);
-            z-index: 100;
-            transition: var(--transition);
-        }
-
-        .theme-toggle:hover {
-            transform: scale(1.1);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 576px) {
-            .error-code {
-                font-size: 4rem;
-            }
-            
-            .error-title {
-                font-size: 1.5rem;
-            }
-            
-            .action-buttons {
-                flex-direction: column;
-            }
-            
-            .btn {
-                justify-content: center;
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2rem;
+      }
+      .message {
+        font-size: 1rem;
+      }
+      .contact-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Character Illustration -->
-        <div class="character">
-            <div class="character-body">
-                <div class="character-face">
-                    <div class="character-eye left"></div>
-                    <div class="character-eye right"></div>
-                    <div class="character-mouth"></div>
-                </div>
-            </div>
-            <div class="character-antena left"></div>
-            <div class="character-antena right"></div>
-        </div>
-
-        <!-- Error Message -->
-        <h1 class="error-code">404</h1>
-        <h2 class="error-title">Halaman Tidak Ditemukan</h2>
-        <p class="error-description">Ups! Sepertinya kamu tersesat atau halaman yang kamu cari sedang dalam pengembangan.</p>
-
-        <!-- Action Buttons -->
-        <div class="action-buttons">
-            <a href="index.html" class="btn btn-primary">
-                <i class="fas fa-home"></i> Kembali ke Beranda
-            </a>
-            <button onclick="history.back()" class="btn btn-secondary">
-                <i class="fas fa-arrow-left"></i> Kembali ke Sebelumnya
-            </button>
-        </div>
+  <div class="container">
+    <div class="logo">Binn Marketplace</div>
+    <div class="loader"></div>
+    <p class="message">
+      Kami sedang melakukan pembaruan sistem untuk memberikan pengalaman belanja yang lebih baik.<br>
+      Mohon maaf atas ketidaknyamanannya. Silakan kunjungi kembali dalam beberapa saat.
+    </p>
+    <a href="https://wa.me/6285330105729" target="_blank" rel="noopener noreferrer" class="contact-button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h.004c-2.259 0-4.316-.608-6.031-1.719l-.233-.143-2.331.612.622-2.253-.158-.248C2.552 16.05 2 13.973 2 11.797 2 5.777 6.853 1 12.804 1s10.805 4.777 10.805 10.797-4.953 10.798-10.904 10.798z" fill="currentColor"/>
+      </svg>
+      Hubungi Admin WhatsApp
+    </a>
+    <div class="status-indicator">
+      <div class="status-dot"></div>
+      <span>Admin online - Terhubung ke WhatsApp API</span>
     </div>
-
-    <script>
-        // DOM Elements
-        const themeToggle = document.getElementById('themeToggle');
-
-        // Initialize the page
-        function init() {
-            setupEventListeners();
-            setInitialTheme();
-        }
-
-        // Setup event listeners
-        function setupEventListeners() {
-            // Theme toggle
-            themeToggle.addEventListener('click', toggleTheme);
-        }
-
-        // Set initial theme based on system preference or localStorage
-        function setInitialTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
-            if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-                updateThemeIcon(savedTheme);
-            } else {
-                // Default to system preference if no saved theme
-                const theme = systemPrefersDark ? 'dark' : 'light';
-                document.documentElement.setAttribute('data-theme', theme);
-                updateThemeIcon(theme);
-            }
-        }
-
-        // Toggle theme
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        }
-
-        // Update theme icon
-        function updateThemeIcon(theme) {
-            themeToggle.innerHTML = theme === 'dark' ? 
-                '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        }
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
+    <p class="footer">Terima kasih atas kesabaran Anda</p>
+  </div>
 </body>
 </html>
