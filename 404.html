@@ -12,7 +12,6 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         :root {
             --primary: #3b82f6;
             --primary-dark: #2563eb;
@@ -37,7 +36,6 @@
             --footer-text: white;
             --footer-secondary: #94a3b8;
         }
-
         .dark-mode {
             --light: #1e293b;
             --dark: #f8fafc;
@@ -55,18 +53,15 @@
             --footer-text: white;
             --footer-secondary: #94a3b8;
         }
-
         body {
             background: linear-gradient(135deg, #f1f5f9 0%, #dbeafe 100%);
             min-height: 100vh;
             color: var(--text-color);
             transition: background 0.3s ease;
         }
-
         .dark-mode body {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
-
         /* Header Styles */
         header {
             background: var(--header-bg);
@@ -74,7 +69,6 @@
             border-bottom: 1px solid var(--border);
             padding: 1rem 2rem;
         }
-
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -82,13 +76,11 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .logo-icon {
             background: var(--primary);
             color: white;
@@ -100,24 +92,20 @@
             justify-content: center;
             font-size: 18px;
         }
-
         .logo-text h1 {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-color);
         }
-
         .logo-text p {
             font-size: 0.875rem;
             color: var(--text-secondary);
         }
-
         .header-right {
             display: flex;
             align-items: center;
             gap: 16px;
         }
-
         .theme-toggle {
             background: var(--light-gray);
             color: var(--text-color);
@@ -131,11 +119,9 @@
             justify-content: center;
             transition: background 0.2s;
         }
-
         .theme-toggle:hover {
             background: var(--gray);
         }
-
         .clock {
             background: var(--light-gray);
             padding: 8px 16px;
@@ -148,7 +134,6 @@
             font-size: 1rem;
             color: var(--text-color);
         }
-
         .admin-btn {
             background: var(--primary);
             color: white;
@@ -162,11 +147,9 @@
             font-weight: 500;
             transition: background 0.2s;
         }
-
         .admin-btn:hover {
             background: var(--primary-dark);
         }
-
         /* Hero Section */
         .hero {
             background: var(--hero-bg);
@@ -174,32 +157,27 @@
             padding: 4rem 2rem;
             text-align: center;
         }
-
         .hero-container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .hero h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             line-height: 1.2;
         }
-
         .hero p {
             font-size: 1.25rem;
             opacity: 0.9;
             line-height: 1.6;
         }
-
         /* Warning Banner */
         .warning-banner {
             background: var(--warning-bg);
             border-bottom: 1px solid #fde68a;
             padding: 12px 2rem;
         }
-
         .warning-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -210,38 +188,31 @@
             font-size: 0.875rem;
             font-weight: 500;
         }
-
         .warning-icon {
             font-size: 18px;
         }
-
         /* Dashboard Section */
         .dashboard {
             padding: 4rem 2rem;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
         }
-
         .section-title h3 {
             font-size: 2rem;
             font-weight: 700;
             color: var(--text-color);
             margin-bottom: 0.5rem;
         }
-
         .section-title p {
             color: var(--text-secondary);
             font-size: 1rem;
         }
-
         /* Stats Cards */
         .stats-grid {
             display: grid;
@@ -249,7 +220,6 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-
         .stat-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -257,25 +227,21 @@
             padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
         .stat-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .stat-info p:first-child {
             font-size: 0.875rem;
             color: var(--text-secondary);
             margin-bottom: 4px;
         }
-
         .stat-info p:last-child {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-color);
         }
-
         .stat-icon {
             width: 40px;
             height: 40px;
@@ -285,19 +251,16 @@
             justify-content: center;
             font-size: 20px;
         }
-
         .icon-green { background: #dcfce7; color: #16a34a; }
         .icon-blue { background: #dbeafe; color: #2563eb; }
         .icon-orange { background: #ffedd5; color: #ea580c; }
         .icon-purple { background: #ede9fe; color: #7c3aed; }
         .icon-pink { background: #fce7f3; color: #be185d; }
-
         .dark-mode .icon-green { background: #064e3b; color: #60a5fa; }
         .dark-mode .icon-blue { background: #1e3a8a; color: #93c5fd; }
         .dark-mode .icon-orange { background: #7c2d12; color: #fdba74; }
         .dark-mode .icon-purple { background: #4c1d95; color: #c4b5fd; }
         .dark-mode .icon-pink { background: #881337; color: #fbcfe8; }
-
         /* Products Grid */
         .products-grid {
             display: grid;
@@ -305,7 +268,6 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-
         .product-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -314,40 +276,33 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             position: relative;
         }
-
         .product-image {
             width: 100%;
             height: 192px;
             object-fit: cover;
         }
-
         .product-info {
             padding: 1rem;
         }
-
         .product-info h5 {
             font-weight: 600;
             margin-bottom: 4px;
             color: var(--text-color);
         }
-
         .product-info p {
             font-size: 0.875rem;
             color: var(--text-secondary);
             margin-bottom: 8px;
         }
-
         .product-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         .product-price {
             font-weight: 700;
             color: var(--primary);
         }
-
         .product-sales {
             background: var(--light-gray);
             color: var(--text-color);
@@ -356,7 +311,6 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         /* Admin Product Management */
         .admin-section {
             display: none;
@@ -367,24 +321,20 @@
             margin-bottom: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
         .admin-section h4 {
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--text-color);
         }
-
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
             margin-bottom: 1rem;
         }
-
         .form-group {
             margin-bottom: 1rem;
         }
-
         .form-group label {
             display: block;
             font-size: 0.875rem;
@@ -392,7 +342,6 @@
             margin-bottom: 4px;
             color: var(--text-color);
         }
-
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -404,13 +353,11 @@
             background: var(--card-bg);
             color: var(--text-color);
         }
-
         .form-buttons {
             display: flex;
             gap: 8px;
             margin-top: 1rem;
         }
-
         .btn {
             padding: 8px 16px;
             border: none;
@@ -419,40 +366,32 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-
         .btn-primary {
             background: var(--primary);
             color: white;
         }
-
         .btn-secondary {
             background: var(--light-gray);
             color: var(--text-color);
         }
-
         .btn-success {
             background: var(--success);
             color: white;
         }
-
         .btn-danger {
             background: var(--danger);
             color: white;
         }
-
         .btn-warning {
             background: var(--warning);
             color: white;
         }
-
         .btn-primary:hover { background: var(--primary-dark); }
         .btn-success:hover { background: #059669; }
         .btn-danger:hover { background: #dc2626; }
         .btn-warning:hover { background: #d97706; }
         .btn-secondary:hover { background: #cbd5e1; }
-
         .dark-mode .btn-secondary:hover { background: #475569; }
-
         /* Product List for Admin */
         .product-list {
             max-height: 300px;
@@ -463,7 +402,6 @@
             margin-top: 1rem;
             background: var(--card-bg);
         }
-
         .product-list-item {
             display: flex;
             justify-content: space-between;
@@ -471,31 +409,25 @@
             padding: 8px 0;
             border-bottom: 1px solid var(--border);
         }
-
         .product-list-item:last-child {
             border-bottom: none;
         }
-
         .product-list-info {
             flex: 1;
         }
-
         .product-list-info h6 {
             font-weight: 600;
             margin-bottom: 2px;
             color: var(--text-color);
         }
-
         .product-list-info p {
             font-size: 0.875rem;
             color: var(--text-secondary);
         }
-
         .product-list-actions {
             display: flex;
             gap: 6px;
         }
-
         /* Analytics Section */
         .analytics-grid {
             display: grid;
@@ -503,7 +435,6 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
         }
-
         .analytics-card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -511,23 +442,19 @@
             padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
         .analytics-header {
             display: flex;
             align-items: center;
             gap: 8px;
             margin-bottom: 1rem;
         }
-
         .analytics-header i {
             color: var(--primary);
         }
-
         .analytics-header h4 {
             font-weight: 600;
             color: var(--text-color);
         }
-
         .transaction-item {
             display: flex;
             justify-content: space-between;
@@ -535,30 +462,24 @@
             padding: 8px 0;
             border-bottom: 1px solid var(--border);
         }
-
         .transaction-item:last-child {
             border-bottom: none;
         }
-
         .transaction-info p:first-child {
             font-weight: 500;
             color: var(--text-color);
         }
-
         .transaction-info p:last-child {
             font-size: 0.75rem;
             color: var(--text-secondary);
         }
-
         .transaction-amount {
             text-align: right;
         }
-
         .transaction-amount p:first-child {
             font-weight: 600;
             color: var(--text-color);
         }
-
         .status-completed {
             background: #dcfce7;
             color: #16a34a;
@@ -567,7 +488,6 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         .status-cancelled {
             background: #fee2e2;
             color: #dc2626;
@@ -576,65 +496,54 @@
             font-size: 0.75rem;
             font-weight: 500;
         }
-
         .dark-mode .status-completed {
             background: #064e3b;
             color: #60a5fa;
         }
-
         .dark-mode .status-cancelled {
             background: #7f1d1d;
             color: #fecaca;
         }
-
         /* Market Trends */
         .trends-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1rem;
         }
-
         .trend-card {
             background: var(--light);
             border-radius: 8px;
             padding: 1rem;
         }
-
         .dark-mode .trend-card {
             background: #334155;
         }
-
         .trend-card h5 {
             font-weight: 600;
             margin-bottom: 8px;
             color: var(--text-color);
         }
-
         .trend-card p {
             font-size: 0.875rem;
             line-height: 1.5;
             color: var(--text-secondary);
         }
-
         /* Footer */
         footer {
             background: var(--footer-bg);
             color: var(--footer-text);
             padding: 3rem 2rem;
         }
-
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
         }
-
         .footer-col h3 {
             font-size: 1.25rem;
             font-weight: 700;
@@ -643,7 +552,6 @@
             align-items: center;
             gap: 12px;
         }
-
         .footer-col h3 i {
             background: var(--primary);
             width: 32px;
@@ -653,21 +561,17 @@
             align-items: center;
             justify-content: center;
         }
-
         .footer-col p {
             color: var(--footer-secondary);
             line-height: 1.6;
         }
-
         .footer-list {
             list-style: none;
         }
-
         .footer-list li {
             margin-bottom: 8px;
             color: var(--footer-secondary);
         }
-
         .customer-service {
             background: var(--primary);
             color: white;
@@ -677,11 +581,9 @@
             cursor: pointer;
             transition: background 0.2s;
         }
-
         .customer-service:hover {
             background: var(--primary-dark);
         }
-
         .footer-bottom {
             border-top: 1px solid #334155;
             padding-top: 2rem;
@@ -689,7 +591,6 @@
             color: var(--footer-secondary);
             font-size: 0.875rem;
         }
-
         /* Modal Styles */
         .modal {
             display: none;
@@ -703,7 +604,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .modal-content {
             background: var(--card-bg);
             border-radius: 12px;
@@ -713,53 +613,43 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.15);
             color: var(--text-color);
         }
-
         .modal h3 {
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--text-color);
         }
-
         .modal-buttons {
             display: flex;
             gap: 8px;
             margin-top: 1rem;
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h2 {
                 font-size: 2rem;
             }
-            
             .hero p {
                 font-size: 1rem;
             }
-            
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
             .header-container {
                 flex-direction: column;
                 gap: 16px;
             }
-            
             .form-grid {
                 grid-template-columns: 1fr;
             }
         }
-
         @media (max-width: 480px) {
             .stats-grid {
                 grid-template-columns: 1fr;
             }
-            
             .hero {
                 padding: 2rem 1rem;
             }
-            
             .dashboard {
                 padding: 2rem 1rem;
             }
@@ -794,7 +684,6 @@
             </div>
         </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -802,7 +691,6 @@
             <p>Platform marketplace aman dan transparan untuk produk digital legal dengan analitik cerdas dan pelacakan pendapatan real-time.</p>
         </div>
     </section>
-
     <!-- Warning Banner -->
     <div class="warning-banner">
         <div class="warning-content">
@@ -810,7 +698,6 @@
             <strong>Peringatan Hukum:</strong> Binn Marketplace hanya mengizinkan penjualan produk digital legal seperti gift card resmi, lisensi software, dan konten digital orisinal. Penjualan akun yang melanggar Terms of Service dilarang.
         </div>
     </div>
-
     <!-- Dashboard Section -->
     <section class="dashboard">
         <div class="container">
@@ -818,7 +705,6 @@
                 <h3>Dashboard Penjual</h3>
                 <p>Pantau kinerja bisnis digital Anda secara real-time</p>
             </div>
-
             <!-- Stats Cards -->
             <div class="stats-grid">
                 <div class="stat-card">
@@ -877,7 +763,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Admin Product Management Section -->
             <div class="admin-section" id="adminProductSection">
                 <h4>Tambah Produk Baru</h4>
@@ -911,13 +796,43 @@
                         <i class="fas fa-plus"></i> Tambah Produk
                     </button>
                 </div>
-
+                
+                <!-- Manual Money Management -->
+                <h4 style="margin-top: 2rem;">Kelola Keuangan Manual</h4>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="transactionType">Jenis Transaksi</label>
+                        <select id="transactionType" required>
+                            <option value="income">Pemasukan</option>
+                            <option value="expense">Pengeluaran</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transactionAmount">Jumlah (Rp)</label>
+                        <input type="number" id="transactionAmount" placeholder="Contoh: 50000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="transactionNote">Catatan</label>
+                        <input type="text" id="transactionNote" placeholder="Contoh: Bonus bulanan" required>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn btn-success" id="addTransactionBtn">
+                        <i class="fas fa-plus"></i> Tambah Transaksi
+                    </button>
+                </div>
+                
+                <!-- Daftar Transaksi Manual -->
+                <h4 style="margin-top: 2rem;">Riwayat Transaksi Manual</h4>
+                <div class="product-list" id="manualTransactionList">
+                    <!-- Transaksi akan muncul di sini -->
+                </div>
+                
                 <h4 style="margin-top: 2rem;">Kelola Produk</h4>
                 <div class="product-list" id="productList">
                     <!-- Products will be loaded here dynamically -->
                 </div>
             </div>
-
             <!-- Products Grid -->
             <div class="section-title">
                 <h3>Produk Tersedia</h3>
@@ -925,7 +840,6 @@
             <div class="products-grid" id="productsGrid">
                 <!-- Products will be loaded here dynamically -->
             </div>
-
             <!-- Analytics Section -->
             <div class="analytics-grid">
                 <div class="analytics-card">
@@ -942,41 +856,11 @@
                         <i class="fas fa-file-invoice"></i>
                         <h4>Transaksi Terbaru</h4>
                     </div>
-                    <div class="analytics-list">
-                        <div class="transaction-item">
-                            <div class="transaction-info">
-                                <p>Canva Pro License</p>
-                                <p>10:23 AM</p>
-                            </div>
-                            <div class="transaction-amount">
-                                <p>Rp29.990</p>
-                                <span class="status-completed">completed</span>
-                            </div>
-                        </div>
-                        <div class="transaction-item">
-                            <div class="transaction-info">
-                                <p>Spotify Premium Gift Card</p>
-                                <p>09:45 AM</p>
-                            </div>
-                            <div class="transaction-amount">
-                                <p>Rp14.990</p>
-                                <span class="status-completed">completed</span>
-                            </div>
-                        </div>
-                        <div class="transaction-item">
-                            <div class="transaction-info">
-                                <p>Netflix Premium Account</p>
-                                <p>06:45 AM</p>
-                            </div>
-                            <div class="transaction-amount">
-                                <p>Rp19.990</p>
-                                <span class="status-cancelled">cancelled</span>
-                            </div>
-                        </div>
+                    <div class="analytics-list" id="latestTransactions">
+                        <!-- Transaksi terbaru akan dimuat di sini -->
                     </div>
                 </div>
             </div>
-
             <!-- Market Trends -->
             <div class="analytics-card" style="margin-top: 2rem;">
                 <div class="analytics-header">
@@ -1000,7 +884,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -1041,7 +924,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Admin Login Modal -->
     <div class="modal" id="adminModal">
         <div class="modal-content">
@@ -1056,7 +938,6 @@
             </div>
         </div>
     </div>
-
     <!-- Customer Service Modal -->
     <div class="modal" id="customerServiceModal">
         <div class="modal-content">
@@ -1071,22 +952,18 @@
             </div>
         </div>
     </div>
-
     <script>
         // Theme toggle functionality
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
         const themeIcon = themeToggle.querySelector('i');
-
         // Check for saved theme preference or respect OS preference
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
         if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
             body.classList.add('dark-mode');
             themeIcon.className = 'fas fa-sun';
         }
-
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             if (body.classList.contains('dark-mode')) {
@@ -1097,7 +974,7 @@
                 localStorage.setItem('theme', 'light');
             }
         });
-
+        
         // Product data storage
         let products = [
             { id: 1, name: 'Canva Pro License', sales: 127, category: 'Design Tools', price: 29990, image: 'https://placehold.co/300x200/3b82f6/ffffff?text=Canva+Pro' },
@@ -1106,7 +983,10 @@
             { id: 4, name: 'Notion Template Pack', sales: 76, category: 'Productivity', price: 24990, image: 'https://placehold.co/300x200/f59e0b/ffffff?text=Notion' },
             { id: 5, name: 'Adobe Creative Cloud', sales: 65, category: 'Creative Software', price: 52990, image: 'https://placehold.co/300x200/ef4444/ffffff?text=Adobe' }
         ];
-
+        
+        // Manual transactions storage
+        let manualTransactions = JSON.parse(localStorage.getItem('manualTransactions')) || [];
+        
         // DOM Elements
         const adminLoginBtn = document.getElementById('adminLoginBtn');
         const adminModal = document.getElementById('adminModal');
@@ -1117,6 +997,8 @@
         const productsGrid = document.getElementById('productsGrid');
         const productList = document.getElementById('productList');
         const bestSellingList = document.getElementById('bestSellingList');
+        const latestTransactions = document.getElementById('latestTransactions');
+        const manualTransactionList = document.getElementById('manualTransactionList');
         
         // Form elements
         const productName = document.getElementById('productName');
@@ -1124,14 +1006,20 @@
         const productPrice = document.getElementById('productPrice');
         const productImage = document.getElementById('productImage');
         const addProductBtn = document.getElementById('addProductBtn');
-
+        
+        // Manual transaction form elements
+        const transactionType = document.getElementById('transactionType');
+        const transactionAmount = document.getElementById('transactionAmount');
+        const transactionNote = document.getElementById('transactionNote');
+        const addTransactionBtn = document.getElementById('addTransactionBtn');
+        
         // Customer service elements
         const customerServiceBtn = document.getElementById('customerServiceBtn');
         const customerServiceModal = document.getElementById('customerServiceModal');
         const customerMessage = document.getElementById('customerMessage');
         const sendCustomerMessageBtn = document.getElementById('sendCustomerMessageBtn');
         const closeCustomerServiceBtn = document.getElementById('closeCustomerServiceBtn');
-
+        
         // Update clock
         function updateClock() {
             const now = new Date();
@@ -1143,34 +1031,186 @@
             });
             document.getElementById('current-time').textContent = timeString;
         }
-
         setInterval(updateClock, 1000);
         updateClock();
-
+        
+        // Calculate total revenue from products and manual transactions
+        function calculateTotalRevenue() {
+            // Calculate revenue from products
+            const productRevenue = products.reduce((sum, p) => sum + (p.price * p.sales), 0);
+            
+            // Calculate revenue from manual transactions
+            const manualIncome = manualTransactions
+                .filter(t => t.type === 'income')
+                .reduce((sum, t) => sum + t.amount, 0);
+            const manualExpense = manualTransactions
+                .filter(t => t.type === 'expense')
+                .reduce((sum, t) => sum + t.amount, 0);
+            
+            return productRevenue + manualIncome - manualExpense;
+        }
+        
+        // Update total revenue display
+        function updateRevenueDisplay() {
+            const total = calculateTotalRevenue();
+            document.getElementById('total-revenue').textContent = `Rp${total.toLocaleString()}`;
+        }
+        
+        // Add manual transaction
+        function addManualTransaction() {
+            const type = transactionType.value;
+            const amount = parseInt(transactionAmount.value);
+            const note = transactionNote.value.trim();
+            
+            if (!amount || !note) {
+                alert('Semua field wajib diisi!');
+                return;
+            }
+            
+            const newTransaction = {
+                id: Date.now(),
+                type,
+                amount,
+                note,
+                timestamp: new Date().toISOString()
+            };
+            
+            manualTransactions.push(newTransaction);
+            localStorage.setItem('manualTransactions', JSON.stringify(manualTransactions));
+            
+            renderManualTransactionList();
+            updateRevenueDisplay();
+            renderLatestTransactions();
+            
+            // Reset form
+            transactionAmount.value = '';
+            transactionNote.value = '';
+        }
+        
+        // Render manual transactions list
+        function renderManualTransactionList() {
+            manualTransactionList.innerHTML = '';
+            
+            // Sort transactions by timestamp (newest first)
+            const sortedTransactions = [...manualTransactions].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            
+            sortedTransactions.forEach(t => {
+                const item = document.createElement('div');
+                item.className = 'product-list-item';
+                
+                const sign = t.type === 'income' ? '+' : '–';
+                const color = t.type === 'income' ? 'var(--success)' : 'var(--danger)';
+                
+                item.innerHTML = `
+                    <div class="product-list-info">
+                        <h6>${t.note}</h6>
+                        <p style="color:${color}">${sign} Rp${t.amount.toLocaleString()}</p>
+                    </div>
+                    <div class="product-list-actions">
+                        <button class="btn btn-danger btn-sm" onclick="deleteManualTransaction(${t.id})">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                `;
+                manualTransactionList.appendChild(item);
+            });
+        }
+        
+        // Delete manual transaction
+        function deleteManualTransaction(id) {
+            if (confirm('Hapus transaksi ini?')) {
+                manualTransactions = manualTransactions.filter(t => t.id !== id);
+                localStorage.setItem('manualTransactions', JSON.stringify(manualTransactions));
+                renderManualTransactionList();
+                updateRevenueDisplay();
+                renderLatestTransactions();
+            }
+        }
+        
+        // Render latest transactions (both product sales and manual transactions)
+        function renderLatestTransactions() {
+            latestTransactions.innerHTML = '';
+            
+            // Combine product transactions and manual transactions
+            const allTransactions = [];
+            
+            // Add some sample product transactions (from original code)
+            const productTransactions = [
+                { name: 'Canva Pro License', time: '10:23 AM', amount: 29990, status: 'completed' },
+                { name: 'Spotify Premium Gift Card', time: '09:45 AM', amount: 14990, status: 'completed' },
+                { name: 'Netflix Premium Account', time: '06:45 AM', amount: 19990, status: 'cancelled' }
+            ];
+            
+            // Add manual transactions
+            manualTransactions.forEach(t => {
+                allTransactions.push({
+                    name: t.note,
+                    time: new Date(t.timestamp).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' }),
+                    amount: t.amount,
+                    status: t.type === 'income' ? 'completed' : 'cancelled'
+                });
+            });
+            
+            // Add product transactions
+            productTransactions.forEach(t => {
+                allTransactions.push(t);
+            });
+            
+            // Sort by time (most recent first)
+            const sortedTransactions = allTransactions.sort((a, b) => {
+                // Convert time strings to comparable values
+                const timeA = new Date(`2025-01-01 ${a.time}`).getTime();
+                const timeB = new Date(`2025-01-01 ${b.time}`).getTime();
+                return timeB - timeA;
+            });
+            
+            // Show only the latest 3 transactions
+            const latestThree = sortedTransactions.slice(0, 3);
+            
+            latestThree.forEach(tx => {
+                const transactionItem = document.createElement('div');
+                transactionItem.className = 'transaction-item';
+                transactionItem.innerHTML = `
+                    <div class="transaction-info">
+                        <p>${tx.name}</p>
+                        <p>${tx.time}</p>
+                    </div>
+                    <div class="transaction-amount">
+                        <p>Rp${tx.amount.toLocaleString()}</p>
+                        <span class="status-${tx.status}">${tx.status}</span>
+                    </div>
+                `;
+                latestTransactions.appendChild(transactionItem);
+            });
+        }
+        
         // Show admin login modal
         function showAdminLogin() {
             adminModal.style.display = 'flex';
         }
-
+        
         // Close admin modal
         function closeAdminModal() {
             adminModal.style.display = 'none';
             adminPassword.value = '';
         }
-
+        
         // Show admin section
         function showAdminSection() {
             adminProductSection.style.display = 'block';
             renderProductList();
             renderProductsGrid();
             renderBestSellingList();
+            renderManualTransactionList();
+            updateRevenueDisplay();
+            renderLatestTransactions();
         }
-
+        
         // Hide admin section
         function hideAdminSection() {
             adminProductSection.style.display = 'none';
         }
-
+        
         // Admin login
         function handleAdminLogin() {
             const password = adminPassword.value.trim();
@@ -1183,19 +1223,19 @@
                 adminPassword.focus();
             }
         }
-
+        
         // Add new product
         function addProduct() {
             const name = productName.value.trim();
             const category = productCategory.value;
             const price = parseInt(productPrice.value);
             const image = productImage.value.trim() || 'https://placehold.co/300x200/6b7280/ffffff?text=No+Image';
-
+            
             if (!name || !category || !price) {
                 alert('Semua field wajib diisi!');
                 return;
             }
-
+            
             const newProduct = {
                 id: products.length + 1,
                 name: name,
@@ -1204,19 +1244,20 @@
                 sales: 0,
                 image: image
             };
-
+            
             products.push(newProduct);
             renderProductList();
             renderProductsGrid();
             renderBestSellingList();
-
+            updateRevenueDisplay();
+            
             // Clear form
             productName.value = '';
             productCategory.value = '';
             productPrice.value = '';
             productImage.value = '';
         }
-
+        
         // Delete product
         function deleteProduct(productId) {
             if (confirm('Apakah Anda yakin ingin menghapus produk ini?')) {
@@ -1224,9 +1265,10 @@
                 renderProductList();
                 renderProductsGrid();
                 renderBestSellingList();
+                updateRevenueDisplay();
             }
         }
-
+        
         // Render products grid (public view)
         function renderProductsGrid() {
             productsGrid.innerHTML = '';
@@ -1247,7 +1289,7 @@
                 productsGrid.appendChild(productCard);
             });
         }
-
+        
         // Render product list for admin management
         function renderProductList() {
             productList.innerHTML = '';
@@ -1268,12 +1310,13 @@
                 productList.appendChild(productItem);
             });
         }
-
+        
         // Render best selling products
         function renderBestSellingList() {
             // Sort products by sales (descending)
             const sortedProducts = [...products].sort((a, b) => b.sales - a.sales).slice(0, 5);
             bestSellingList.innerHTML = '';
+            
             sortedProducts.forEach(product => {
                 const transactionItem = document.createElement('div');
                 transactionItem.className = 'transaction-item';
@@ -1287,40 +1330,40 @@
                 bestSellingList.appendChild(transactionItem);
             });
         }
-
+        
         // Customer Service Functions
         function showCustomerService() {
             customerServiceModal.style.display = 'flex';
         }
-
+        
         function closeCustomerService() {
             customerServiceModal.style.display = 'none';
             customerMessage.value = '';
         }
-
+        
         function sendCustomerMessage() {
             const message = customerMessage.value.trim();
             if (!message) {
                 alert('Pesan tidak boleh kosong!');
                 return;
             }
-            
             // In a real app, this would send to admin
             alert('Pesan Anda telah dikirim ke admin! Mereka akan segera menghubungi Anda.');
             closeCustomerService();
         }
-
+        
         // Event Listeners
         adminLoginBtn.addEventListener('click', showAdminLogin);
         cancelBtn.addEventListener('click', closeAdminModal);
         loginSubmitBtn.addEventListener('click', handleAdminLogin);
         addProductBtn.addEventListener('click', addProduct);
-
+        addTransactionBtn.addEventListener('click', addManualTransaction);
+        
         // Customer service event listeners
         customerServiceBtn.addEventListener('click', showCustomerService);
         closeCustomerServiceBtn.addEventListener('click', closeCustomerService);
         sendCustomerMessageBtn.addEventListener('click', sendCustomerMessage);
-
+        
         // Close modals when clicking outside
         window.addEventListener('click', function(e) {
             if (e.target === adminModal) {
@@ -1330,7 +1373,7 @@
                 closeCustomerService();
             }
         });
-
+        
         // Close modals with Escape key
         window.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
@@ -1342,10 +1385,13 @@
                 }
             }
         });
-
+        
         // Initialize the page
         renderProductsGrid();
         renderBestSellingList();
+        updateRevenueDisplay();
+        renderLatestTransactions();
+        renderManualTransactionList();
     </script>
 </body>
 </html>
