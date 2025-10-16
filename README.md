@@ -13,6 +13,6 @@ Penggunaan script ini sepenuhnya menjadi tanggung jawab pengguna.
 Developer dan kontributor tidak bertanggung jawab atas kerusakan, pelanggaran hukum, atau kerugian yang timbul akibat penggunaan script ini.
 
 ### ⚙︎ Sumber Resmi & Pembaruan
-[https://www.neolabsofficial.my.id](https://www.neolabsofficial.my.id)  
 
-**Dikembangkan oleh:** `NSLabs Team`
+
+**Dikembangkan oleh:** `BINN MARKETPLACE`
