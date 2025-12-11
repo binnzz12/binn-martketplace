@@ -639,3 +639,39 @@
     </script>
 </body>
 </html>
+
+
+                <!-- Web3Forms Contact Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="web3-contact-form"
+                    id="web3ContactForm">
+                    <input type="hidden" name="access_key" value="13555b1a-cbe5-4c36-a41a-d32cedcbd578">
+                    <input type="hidden" name="subject" value="New Contact from Portfolio Website">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+                    <h4 class="form-title">Send Me a Message</h4>
+
+                    <div class="form-group">
+                        <input type="text" name="name" id="web3Name" placeholder=" " required>
+                        <label for="web3Name">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" id="web3Email" placeholder=" " required>
+                        <label for="web3Email">Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" id="web3Message" rows="4" placeholder=" " required></textarea>
+                        <label for="web3Message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+
+                    <div class="form-response" id="formResponse" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
