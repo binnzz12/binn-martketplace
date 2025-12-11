@@ -919,3 +919,34 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+const web3ContactForm = document.getElementById('web3ContactForm');
+const formResponse = document.getElementById('formResponse');
+
+if (web3ContactForm) {
+    web3ContactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = web3ContactForm.querySelector('button[type="submit"]');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        submitBtn.disabled = true;
+        formResponse.style.display = 'none';
+
+        // Get form data
+        const formData = new FormData(web3ContactForm);
+
+        try {
+            // Submit to Web3Forms
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
