@@ -29,7 +29,7 @@ const productsData = {
               {
                 "id": 1,
                 "name": "Capcut premium",
-                "icon": "fas fa-user-circle",
+                "icon": "https://image2url.com/images/1766026811684-4f90e213-fb7c-4026-99c8-75d05d6e6fe6.jpg",
                 "description": "kami menyediakan capcut dana pelajar yang ramah kantong.",
                 "variants": [
                   { "name": "1bulan public", "price": 5000 },
