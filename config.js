@@ -7,7 +7,7 @@ alamat: "Jl. randu agung 2 no 95 surabaya",
 sosial_media: {
   email: "ytbintang4@gmail.com", // Email
   youtube: "@binnzzpreset", // YouTube Username 
-  tiktok: "nasutionn_marganaa", // Tiktok Username 
+  tiktok: "presetbinn", // Tiktok Username 
   whatsapp: "085330105729", // WhatsApp Number 
   telegram: "binnprst" // Telegram Username
 },
