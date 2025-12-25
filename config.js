@@ -18,8 +18,8 @@ payment: {
   qris: "https://linkqr.kamu.mom" // Url Qris
 },
 telegram_api: {
-  bot: "62828278:7678blablabla", // Token bot father
-  chatid: "6118311111" // ID telegram
+  bot: "8278029877:AAHEBGwRneUeFJMv57eKeDShqaKWj6M4wP4", // Token bot father
+  chatid: "8278029877" // ID telegram
 },
 }
 
