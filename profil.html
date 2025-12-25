@@ -709,7 +709,7 @@ ${formData.message}
         `.trim();
         
         // Kirim pesan ke Telegram menggunakan API Bot
-        const response = await fetch(`https://api.telegram.org/bot${CONFIG.8278029877:AAHEBGwRneUeFJMv57eKeDShqaKWj6M4wP4}/sendMessage`, {
+        const response = await fetch(`https://api.telegram.org/bot${CONFIG.api.telegram.org}/sendMessage`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
